@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý thời gian</title>
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo" title="University Management System">
+            <img src="./images/logo.png" alt="">
+            <h2>H<span class="danger">Q</span>T</h2>
+        </div>
+        <div class="navbar">
+            <a href="index.html" class="active">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="timetable.html" onclick="timeTableAll()">
+                <span class="material-icons-sharp">today</span>
+                <h3>Thời gian biểu</h3>
+            </a>
+            <a href="exam.html">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Bài kiểm tra</h3>
+            </a>
+            <a href="intro.html">
+                <span class="material-icons-sharp">info</span>
+                <h3>Giới thiệu</h3>
+            </a>
+            <a href="#">
+                <span class="material-icons-sharp" onclick="">logout</span>
+                <h3>Đăng xuất</h3>
+            </a>
+        </div>
+        <div id="profile-btn">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+
+    </header>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <div class="top">
+                    <div class="profile-photo">
+                        <img src="./images/avt.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Nhóm 11</p>
+                        <small class="text-muted">A+</small>
+                    </div>
+                </div>
+                <div class="about">
+                    <h5>Ngành</h5>
+                    <p>Trí tuệ nhân tạo</p>
+                    <h5>Contact</h5>
+                    <p>1234567890</p>
+                    <h5>Email</h5>
+                    <p>ht139944@gmail.com</p>
+                    <h5>Address</h5>
+                    <p>144 Xuân Thủy -  Cầu Giấy</p>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Sự tham dự</h1>
+            <div class="subjects">
+                <div class="eg">
+                    <span class="material-icons-sharp">architecture</span>
+                    <h3>Đồ họa kỹ thuật</h3>
+                    <h2>12/14</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>86%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">24 giờ qua</small>
+                </div>
+                <div class="mth">
+                    <span class="material-icons-sharp">functions</span>
+                    <h3>Kỹ thuật toán học</h3>
+                    <h2>27/29</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>93%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">24 giờ qua</small>
+                </div>
+                <div class="cs">
+                    <span class="material-icons-sharp">computer</span>
+                    <h3>Kiến trúc máy tính</h3>
+                    <h2>27/30</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>81%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">24 giờ qua</small>
+                </div>
+                <div class="cg">
+                    <span class="material-icons-sharp">dns</span>
+                    <h3>Quản lý cơ sở dữ liệu</h3>
+                    <h2>24/25</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>96%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">24 giờ qua</small>
+                </div>
+                <div class="net">
+                    <span class="material-icons-sharp">router</span>
+                    <h3>An ninh mạng</h3>
+                    <h2>25/27</h2>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="number">
+                            <p>92%</p>
+                        </div>
+                    </div>
+                    <small class="text-muted">24 giờ qua</small>
+                </div>
+            </div>
+
+            <div class="timetable" id="timetable">
+                <div>
+                    <span id="prevDay">&lt;</span>
+                    <h2>Thời khóa biểu hôm nay</h2>
+                    <span id="nextDay">&gt;</span>
+                </div>
+                <span class="closeBtn" onclick="timeTableAll()">X</span>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Thời gian</th>
+                            <th>Phòng học</th>
+                            <th>Môn học</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="announcements">
+                <h2>Thông báo</h2>
+                <div class="updates">
+                    <div class="message">
+                        <p> <b>Học thuật</b> Thực tập đào tạo mùa hè với Live Projects.</p>
+                        <small class="text-muted">2 phút trước</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Ngoại khóa</b> Cơ hội thực tập toàn cầu bởi tổ chức sinh viên.</p>
+                        <small class="text-muted">10 phút trước</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Bài kiểm tra</b> Hướng dẫn làm bài kiểm tra giữa kỳ.</p>
+                        <small class="text-muted">Hôm qua</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="leaves">
+                <h2>Giáo viên nghỉ phép</h2>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="./images/thayLong.jpg" alt=""></div>
+                    <div class="info">
+                        <h3>Trần Quốc Long</h3>
+                        <small class="text-muted">Cả ngày</small>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="./images/thayHoang.jpg" alt=""></div>
+                    <div class="info">
+                        <h3>Trương Anh Hoàng</h3>
+                        <small class="text-muted">nửa ngày</small>
+                    </div>
+                </div>
+                <div class="teacher">
+                    <div class="profile-photo"><img src="./images/thayHa.jpg" alt=""></div>
+                    <div class="info">
+                        <h3>Nguyễn Việt Hà</h3>
+                        <small class="text-muted">Cả ngày</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="timeTable.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
