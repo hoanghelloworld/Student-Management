@@ -451,3 +451,31 @@ main .timetable.active .closeBtn{
         padding: 2rem;
     }
 }
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    /* Thêm các thuộc tính để sắp xếp hàng dọc */
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right:40px;
+    margin-top: 10px;
+    right:0;
+    
+  }
+  
+  /* CSS cho mỗi mục trong menu */
+  .menu a {
+    display: block;
+    padding: 6px 0;
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* CSS cho nút menu */
+  .menu-btn {
+    cursor: pointer;
+  }
