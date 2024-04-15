@@ -5,7 +5,7 @@
 <br />22022584 - Nguyễn Huy Hoàng
 <br />22022558 - Nguyễn Xuân Trình
 
-LỜI NÓI ĐẦU
+LỜI NÓI ĐẦU <br />
 1.Tính cần thiết của đề tài
 Đề tài “Xây dựng ứng dụng quản lý thời khoá biểu sinh viên” có tính cần thiết và hữu ích với nhiều lý do sau:
 1.Giải quyết nhu cầu thực tế: Sinh viên luôn cần quản lý thời gian học tập, tham gia hoạt động ngoại khóa, và sắp xếp công việc cá nhân. Một ứng dụng quản lý thời khoá biểu sẽ giúp họ dễ dàng theo dõi lịch trình và tối ưu hóa thời gian.
