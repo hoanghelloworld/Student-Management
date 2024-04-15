@@ -6,14 +6,14 @@
 <br />22022558 - Nguyễn Xuân Trình
 
 LỜI NÓI ĐẦU <br />
-1.Tính cần thiết của đề tài
-Đề tài “Xây dựng ứng dụng quản lý thời khoá biểu sinh viên” có tính cần thiết và hữu ích với nhiều lý do sau:
-1.Giải quyết nhu cầu thực tế: Sinh viên luôn cần quản lý thời gian học tập, tham gia hoạt động ngoại khóa, và sắp xếp công việc cá nhân. Một ứng dụng quản lý thời khoá biểu sẽ giúp họ dễ dàng theo dõi lịch trình và tối ưu hóa thời gian.
-2.Tạo thuận lợi cho sinh viên: Ứng dụng giúp sinh viên truy cập thời khoá biểu của mình mọi lúc, mọi nơi. Họ có thể xem lịch học, biết được phòng học, và cập nhật thông tin nhanh chóng.
-3.Hỗ trợ giảng viên và nhân viên quản lý: Giảng viên và nhân viên quản lý cũng cần theo dõi thời khoá biểu của sinh viên để tổ chức lịch trình giảng dạy và sắp xếp phòng học. Ứng dụng này giúp họ quản lý hiệu quả hơn.
-4.Tính chính xác và hiệu quả: Ứng dụng quản lý thời khoá biểu sẽ giảm thiểu sai sót trong việc ghi chép thời gian và địa điểm học. Điều này đảm bảo tính chính xác và hiệu quả trong việc quản lý thời gian.
-5.Phát triển kỹ năng lập trình và quản lý dự án: Xây dựng ứng dụng này sẽ giúp sinh viên rèn luyện kỹ năng lập trình, thiết kế giao diện, và quản lý dự án.
-Tóm lại, việc xây dựng ứng dụng quản lý thời khoá biểu sinh viên không chỉ giúp cải thiện quản lý thời gian học tập mà còn mang lại nhiều lợi ích cho cả sinh viên và nhân viên quản lý. 
+1.Tính cần thiết của đề tài <br />
+Đề tài “Xây dựng ứng dụng quản lý thời khoá biểu sinh viên” có tính cần thiết và hữu ích với nhiều lý do sau: <br />
+1.Giải quyết nhu cầu thực tế: Sinh viên luôn cần quản lý thời gian học tập, tham gia hoạt động ngoại khóa, và sắp xếp công việc cá nhân. Một ứng dụng quản lý thời khoá biểu sẽ giúp họ dễ dàng theo dõi lịch trình và tối ưu hóa thời gian.<br />
+2.Tạo thuận lợi cho sinh viên: Ứng dụng giúp sinh viên truy cập thời khoá biểu của mình mọi lúc, mọi nơi. Họ có thể xem lịch học, biết được phòng học, và cập nhật thông tin nhanh chóng.<br />
+3.Hỗ trợ giảng viên và nhân viên quản lý: Giảng viên và nhân viên quản lý cũng cần theo dõi thời khoá biểu của sinh viên để tổ chức lịch trình giảng dạy và sắp xếp phòng học. Ứng dụng này giúp họ quản lý hiệu quả hơn.<br />
+4.Tính chính xác và hiệu quả: Ứng dụng quản lý thời khoá biểu sẽ giảm thiểu sai sót trong việc ghi chép thời gian và địa điểm học. Điều này đảm bảo tính chính xác và hiệu quả trong việc quản lý thời gian.<br />
+5.Phát triển kỹ năng lập trình và quản lý dự án: Xây dựng ứng dụng này sẽ giúp sinh viên rèn luyện kỹ năng lập trình, thiết kế giao diện, và quản lý dự án.<br />
+Tóm lại, việc xây dựng ứng dụng quản lý thời khoá biểu sinh viên không chỉ giúp cải thiện quản lý thời gian học tập mà còn mang lại nhiều lợi ích cho cả sinh viên và nhân viên quản lý. <br />
 2.Mục tiêu nghiên cứu
 Mục tiêu nghiên cứu của đề tài quản lý thời gian biểu thường xoay quanh việc tìm hiểu và cải thiện kỹ năng quản lý thời gian. Dưới đây là một số mục tiêu thường gặp trong các đề tài nghiên cứu về quản lý thời gian:
 1.Nâng cao kỹ năng quản lý thời gian: Đề tài có thể tập trung vào việc phân tích các phương pháp, công cụ và chiến lược để hiệu quả hóa việc quản lý thời gian. Mục tiêu là giúp cá nhân hoặc tổ chức tận dụng thời gian một cách hiệu quả hơn 1.
