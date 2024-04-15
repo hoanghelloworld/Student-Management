@@ -1,6 +1,6 @@
 # Quản Lý Sinh Viên
 
-Một hệ thống quản lý học tập toàn diện được phát triển bằng framework web Django. Nó bao gồm các tính năng như quản lý khóa học (thêm và bỏ), quản lý điểm và kết quả đánh giá, trắc nghiệm trực tuyến, tạo báo cáo, quản lý sinh viên và giảng viên, các chức năng bảng điều khiển và nhiều tính năng khác.
+Một hệ thống quản lý học tập toàn diện được phát triển bằng HTML-CSS. Nó bao gồm các tính năng như quản lý khóa học (thêm và bỏ), quản lý điểm và kết quả đánh giá, trắc nghiệm trực tuyến, tạo báo cáo, quản lý sinh viên và giảng viên, các chức năng bảng điều khiển và nhiều tính năng khác.
 
 ## Thành Viên:
 - 22022635 - Nguyễn Tông Quân
