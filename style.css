@@ -456,7 +456,7 @@ main .timetable.active .closeBtn{
     position: absolute;
     background-color: #f9f9f9;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    padding: 12px 50px 12px 20px;
     z-index: 1;
     /* Thêm các thuộc tính để sắp xếp hàng dọc */
     flex-direction: column;
@@ -473,8 +473,11 @@ main .timetable.active .closeBtn{
     padding: 6px 0;
     text-decoration: none;
     color: black;
+    display: flex;
   }
-  
+  .menu a .material-icons-sharp {
+    margin-right: 10px; /* Tạo khoảng cách giữa biểu tượng và chữ */
+ }
   /* CSS cho nút menu */
   .menu-btn {
     cursor: pointer;
