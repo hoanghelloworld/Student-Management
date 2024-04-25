@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="shortcut icon" href="./images/logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cv.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 </head>
 <body>
     <header>
@@ -63,8 +66,187 @@
         </div>
 
     </header>
+    <div class="container">
+        <div class="avatar">
+            <!-- Thay đổi src của ảnh để hiển thị ảnh người dùng đã tải lên -->
+            <img id="avatar-image" src="placeholder.jpg" alt="Avatar">
+            <!-- Thêm phần tải lên ảnh -->
+            <input type="file" id="avatar-input" accept="image/*">
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var avatarInput = document.getElementById('avatar-input');
+                var avatarImage = document.getElementById('avatar-image');
 
+                avatarInput.addEventListener('change', function(event) {
+                    var file = event.target.files[0];
+                    if (file) {
+                        var reader = new FileReader();
+                            reader.onload = function(event) {
+                            avatarImage.src = event.target.result;
+                            avatarImage.style.display = 'block';
+                            avatarImage.style.opacity = '1';
+                            avatarImage.nextElementSibling.style.display = 'none';
+                            document.querySelector('.avatar').classList.add('hide-text'); 
+                        };
+                        reader.readAsDataURL(file);
+                    } else {
+                        avatarImage.src = 'placeholder.jpg';
+                        avatarImage.style.display = 'block';
+                        avatarImage.style.opacity = '0.5';
+                        avatarImage.nextElementSibling.style.display = 'block';
+                        document.querySelector('.avatar').classList.remove('hide-text');
+                    }
+                });
+            });
+        </script>
+        <div class="name">
+            <h1><input type="text" id="input-name" placeholder="Your Name"></h1>
+            <div class="specialize">Frond-End Developer</div>
+            <ul class="contact">
+                <li>
+                    <span>P</span> <input type="tel" id="input-phone" placeholder="Your Phone Number">
+                </li>
+                <li>
+                    <span>E</span> <input type="email" id="input-email" placeholder="Your Email">
+                </li>
+                <li>
+                    <span>W</span> <input type="web" id="input-website" placeholder="Your Website">
+                </li>
+            </ul>
+        </div>
+        <div class="info">
+            <ul>
+                <li contenteditable="true">From <b>City</b> - Country</li>
+                <li contenteditable="true">01/01/2000</li>
+                <li contenteditable="true">AAAA University</li>
+            </ul>
+        </div>
+        <div class="intro">
+            <h2>INTRODUCE MYSELF</h2>
+            <li>
+                <textarea type="input-text" cols="70" rows="6" maxlength="400" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eligendi omnis quasi dolores modi eius aliquam ipsum soluta, dolore tenetur excepturi praesentium porro alias itaque enim labore qui necessitatibus molestias hic cum deserunt ab! Illum sed eveniet distinctio, alias sunt repudiandae labore a dolorum tenetur? Harum deleniti mollitia odio neque."></textarea>
+            </li>
+        </div>    
+        <div class="experience">
+         <h2>EXPERIENCE</h2>  
+         <div class="item">
+             <h4>Frond-end Developer</h4>
+             <div class="time">
+                <span><input type="year" placeholder="2023-2024"></span>
+                <span><input type="company" placeholder="ABCD company "></span>
+             </div>
+             <div class="des">
+                <textarea type="exp" rows="4" cols="40" placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium officia nobis quas excepturi consectetur quidem quia est neque doloremque."></textarea>
+             </div>
+         </div>
+ 
+            <div class="item">
+                <h4>Student</h4>
+                <div class="time">
+                    <span><input type="year" placeholder="2023-2024"></span>
+                    <span><input type="company" placeholder="ABCD University"></span>
+                </div>
+                <div class="des">
+                    <textarea type = "exp" rows="5" cols="40" placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium officia nobis quas excepturi consectetur quidem quia est neque doloremque."></textarea>
+                </div>
+            </div>
+            <h2 class="skills">
+                SKILLS
+            </h2>
+             <ul>
+                 <li><input type="company" placeholder="HTML"></li>
+                 <li><input type="company" placeholder="CSS"></li>
+                 <li><input type="company" placeholder="Bootstrap"></li>
+                 <li><input type="company" placeholder="Javascript"></li>
+                 <li><input type="company" placeholder="PHP"></li>
+                 <li><input type="company" placeholder="MySql"></li>
+                 <li><input type="company" placeholder="Git"></li>
+                 <li><input type="company" placeholder="Laravel"></li>
+             </ul>
+ 
+        </div>
+        <div class="project">
+         <h2>PROJECTS</h2>
+         <div class="item">
+             <h4><input type="prj" placeholder="Website shopping"></h4>
+             <div class="time">
+                 <input type="yearl" placeholder="2022">
+             </div>
+             <div class="web">
+                 <input type="web" placeholder="www.lundevweb.com">
+             </div>
+             <div class="location">
+                 Frond-end Developer
+             </div>
+             <div class="des">
+                 <textarea type="input-text" rows="3" cols="70" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur amet sed, est eum facilis repellendus atque perspiciatis iste porro nobis autem explicabo expedita fugiat nostrum. Eveniet eum autem culpa!"></textarea>
+                 <ul>
+                     <li><textarea type="input-text" rows="1" cols="70" placeholder="Lorem ipsum dolordolores."></textarea></li>
+                     <li><textarea type="input-text" rows="1" cols="70" placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, dolores."></textarea></li>
+                     <li><textarea type="input-text" rows="1" cols="70" placeholder="Lorem ipsum dolor sit amet consectetur dolores."></textarea></li>
+                 </ul>
+             </div>
+         </div>
+ 
+         <div class="item">
+            <h4><input type="prj" placeholder="Website shopping"></h4>
+            <div class="time">
+                <input type="yearl" placeholder="2022">
+            </div>
+            <div class="web">
+                <input type="web" placeholder="www.lundevweb.com">
+            </div>
+            <div class="location">
+                Frond-end Developer
+            </div>
+            <div class="des">
+                <textarea type="input-text" rows="3" cols="70" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur amet sed, est eum facilis repellendus atque perspiciatis iste porro nobis autem explicabo expedita fugiat nostrum. Eveniet eum autem culpa!"></textarea>
+                <ul>
+                    <li><textarea type="input-text" rows="1" cols="70" placeholder="Lorem ipsum dolordolores."></textarea></li>
+                    <li><textarea type="input-text" rows="1" cols="70" placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, dolores."></textarea></li>
+                    <li><textarea type="input-text" rows="1" cols="70" placeholder="Lorem ipsum dolor sit amet consectetur dolores."></textarea></li>
+                </ul>
+            </div>
+        </div>
+ 
+        <div class="item">
+            <h4><input type="prj" placeholder="Website shopping"></h4>
+            <div class="time">
+                <input type="yearl" placeholder="2022">
+            </div>
+            <div class="web">
+                <input type="web" placeholder="www.lundevweb.com">
+            </div>
+            <div class="location">
+                Frond-end Developer
+            </div>
+            <div class="des">
+                <textarea type="input-text" rows="3" cols="70" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur amet sed, est eum facilis repellendus atque perspiciatis iste porro nobis autem explicabo expedita fugiat nostrum. Eveniet eum autem culpa!"></textarea>
+                <ul>
+                    <li><textarea type="input-text" rows="1" cols="70" placeholder="Lorem ipsum dolordolores."></textarea></li>
+                    <li><textarea type="input-text" rows="1" cols="70" placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, dolores."></textarea></li>
+                    <li><textarea type="input-text" rows="1" cols="70" placeholder="Lorem ipsum dolor sit amet consectetur dolores."></textarea></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <button id="export-btn">Xuất PDF</button>
+    <script>
+        window.onload = function () {
+        const exportBtn = document.getElementById('export-btn');
+        const container = document.querySelector('.container');
 
+        exportBtn.addEventListener('click', function () {
+            html2canvas(container).then(canvas => {
+                const imgData = canvas.toDataURL('image/png');
+                const pdf = new jsPDF();
+                pdf.addImage(imgData, 'PNG', 0, 0);
+                pdf.save('container.pdf');
+                });
+            });
+        };
+    </script>
 </body>
 
 <script src="app.js"></script>
