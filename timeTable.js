@@ -8,126 +8,96 @@ const Sunday = [
 ]
 const Monday = [
     {
-        time: '09-10 AM',
-        roomNumber: '38-718',
-        subject: 'Cơ sở dữ liệu',
-        type: 'bài học'
+        time: '07-09 AM',
+        roomNumber: 'Sân NN',
+        subject: 'Bóng đá',
+        type: 'kiểm tra'
     },
     {
-        time: '10-11 AM',
-        roomNumber: '38-718',
-        subject: 'Tư tưởng Hồ Chí Minh',
-        type: 'Hướng dẫn'
-    },
-    {
-        time: '12-01 PM',
-        roomNumber: '38-718',
-        subject: 'Kinh Tế chính trị',
-        type: 'bài học'
+        time: '13-16 PM',
+        roomNumber: '301-G3',
+        subject: 'Công nghệ phần mềm',
+        type: 'báo cáo cuối kì'
     }
 ]
 const Tuesday = [
     {
-        time: '09-10 AM',
-        roomNumber: '27-304Y',
-        subject: 'Kinh Tế chính trị',
-        type: 'Hướng dẫn'
+        time: '10-12 AM',
+        roomNumber: '305-GD2',
+        subject: 'Học máy',
+        type: 'tự học'
     },
     {
-        time: '11-12 AM',
-        roomNumber: '28-107',
-        subject: 'CS849',
-        type: 'bài học'
-    },
-    {
-        time: '12-01 PM',
-        roomNumber: '28-107',
-        subject: 'CS849',
-        type: 'bài học'
-    },
-    {
-        time: '02-03 PM',
-        roomNumber: '38-718',
-        subject: 'NS200',
-        type: 'bài học'
+        time: '05-07 PM',
+        roomNumber: '301-G3',
+        subject: 'Chủ nghĩa xã hội',
+        type: 'hướng dẫn học'
     }
 ]
 
 const Wednesday = [
     {
-        time: '10-11 AM',
-        roomNumber: '33-309',
-        subject: 'Triết học',
-        type: 'bài học'
+        time: '09-11 AM',
+        roomNumber: '101-G3',
+        subject: 'Seminar',
+        type: 'nghiên cứu khoa học'
     },
     {
-        time: '11-12 AM',
-        roomNumber: '38-719',
-        subject: 'CS200',
-        type: 'bài học'
+        time: '13-16 PM',
+        roomNumber: '301-G3',
+        subject: 'Cơ sở toán học',
+        type: 'báo cáo cuối kì'
     }
 ]
 
 const Thursday = [
     {
         time: '11-12 AM',
-        roomNumber: '33-309',
+        roomNumber: '301-G3',
         subject: 'Kinh Tế chính trị',
         type: 'bài học'
     },
     {
         time: '01-02 PM',
-        roomNumber: '38-719',
-        subject: 'CS849',
-        type: 'bài học'
+        roomNumber: '405-E5',
+        subject: 'thực hành THPT hệ thống TTNT',
+        type: 'thực hành'
     },
     {
         time: '02-03 PM',
-        roomNumber: '38-718',
-        subject: 'NS200',
-        type: 'bài học'
+        roomNumber: '301-G3',
+        subject: 'Tiếng anh',
+        type: 'luyện nói'
     }
 ]
 
 const Friday = [
     {
-        time: '10-11 AM',
-        roomNumber: '33-309',
-        subject: 'MEC103',
-        type: 'bài học'
+        time: '07-09 AM',
+        roomNumber: '301-G3',
+        subject: 'THPT hệ thống TTNT',
+        type: 'thực hành'
     },
     {
         time: '11-12 AM',
-        roomNumber: '33-309',
-        subject: 'MEC103',
+        roomNumber: '301-G3',
+        subject: 'Lịch sử đảng',
         type: 'bài học'
     },
     {
         time: '02-03 PM',
-        roomNumber: '33-601',
-        subject: 'CS849',
-        type: 'Hướng dẫn'
+        roomNumber: '301-G3',
+        subject: 'Cơ sở toán học',
+        type: 'thực hành'
     },
 
 ]
 
 const Saturday = [
     {
-        time: '09-10 AM',
-        roomNumber: '34-604',
-        subject: 'Triết học',
-        type: 'Hướng dẫn'
-    },
-    {
-        time: '10-11 AM',
-        roomNumber: '34-604',
-        subject: 'Triết học',
-        type: 'bài học'
-    },
-    {
-        time: '01-02 PM',
-        roomNumber: '33-309',
-        subject: 'Kinh Tế chính trị',
-        type: 'bài học'
+        time: '07-10 AM',
+        roomNumber: '301-G3',
+        subject: 'cơ sở toán học TTNT',
+        type: 'lý thuyết'
     }
 ]
