@@ -91,6 +91,13 @@ body{
     margin-top: 40px;
 }
 
+
+.form-submit-btn section{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .form-submit-btn input{
     display: block;
     width: 100%;
