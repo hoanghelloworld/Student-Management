@@ -1,20 +1,41 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js";
+
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCQYgI5oa7cyZbNelTuTNn4zL2RiLyRAFQ",
+    authDomain: "login-example-f7fc6.firebaseapp.com",
+    projectId: "login-example-f7fc6",
+    storageBucket: "login-example-f7fc6.appspot.com",
+    messagingSenderId: "559804348869",
+    appId: "1:559804348869:web:d0d710977dfb2ed9bbb3ac"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('submit').addEventListener('click', function(event) {
-        event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+        
+      event.preventDefault(); // Ngăn chặn hành vi mặc định của form
 
-        // Lấy giá trị từ trường email và password
-        var email = document.getElementById('Email').value;
-        var password = document.getElementById('Password').value;
+      const email = document.getElementById('Email').value;
+      
+      const password = document.getElementById('Password').value;
 
-        // Kiểm tra logic đăng nhập ở đây (trong ví dụ này, email là "admin" và password là "123456")
-        if (email !== '' && password !== '') {
-            // Lưu tên người dùng vào Local Storage
-            localStorage.setItem('username', email);
+      signInWithEmailAndPassword(auth,email, password)
+        .then((userCredential) => {
 
-            window.location.href = "home.html";
-        } else {
-            // Đăng nhập thất bại, hiển thị thông báo lỗi hoặc thực hiện hành động khác
-            alert("Invalid email or password. Please try again.");
-        }
+          const user = userCredential.user;
+          alert('Login successfully...')
+          window.location.href = "home.html";
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          // ..
+          alert("Invalid email or password. Please try again.");
+      });
+
     });
 });
