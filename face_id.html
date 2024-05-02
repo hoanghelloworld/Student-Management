@@ -2,13 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Quản lý thời gian</title>
+  <link rel="shortcut icon" href="./images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script defer src="face-api.min.js"></script>
   <script defer src="script.js"></script>
+  <script src="menu.js"></script>
+  <script src="app.js"></script>
   <style>
-    body {
+    .video {
       margin: 0;
       padding: 0;
       width: 100vw;
@@ -16,7 +22,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    }
+    } 
 
     canvas {
       position: absolute;
@@ -24,6 +30,115 @@
   </style>
 </head>
 <body>
-  <video id="video" width="720" height="560" autoplay muted></video>
+  <header>
+    <div class="logo" title="University Management System">
+        <img src="./images/logo.png" alt="">
+        <h2>H<span class="danger">Q</span>T</h2>
+    </div>
+    <div class="navbar">
+        <a href="home.html">
+            <span class="material-icons-sharp">home</span>
+            <h3>Home</h3>
+        </a>
+        <a href="timetable.html" onclick="timeTableAll()">
+            <span class="material-icons-sharp">today</span>
+            <h3>Thời gian biểu</h3>
+        </a>
+        <a href="exam.html">
+            <span class="material-icons-sharp">grid_view</span>
+            <h3>Bài kiểm tra</h3>
+        </a>
+        <a href="cv.html">
+            <span class="material-icons-sharp">wysiwyg</span>
+            <h3>CV</h3>
+        </a>
+        <a href="intro.html">
+            <span class="material-icons-sharp">info</span>
+            <h3>Giới thiệu</h3>
+        </a>
+        <a href="face_id.html" class="active">
+            <span class="material-icons-sharp">face</span>
+            <h3>Nhận diện khuôn mặt</h3>
+        </a>
+    </div>
+    <div id="profile-btn">
+        <span class="material-icons-sharp">person</span>
+    </div>
+    <div class="theme-toggler">
+        <span class="material-icons-sharp active">light_mode</span>
+        <span class="material-icons-sharp">dark_mode</span>
+    </div>
+
+    <div>
+        <div class="menu-btn" onclick="toggleMenu()" style="font-size: 25px;">☰</div>
+
+        <!-- Menu -->
+        <div id="myMenu" class="menu">
+            <a href="#" class="note-button">
+                <span class="material-icons-sharp">note</span>
+                <h3>Note</h3>
+            </a>
+            <a href="https://tuyendung.topcv.vn/" target="_blank">
+                <span class="material-icons-sharp">work</span>
+                <h3>Tìm việc làm</h3>
+            </a>
+            <a href="https://github.com/hoanghelloworld/Student-Management/" target = "_blank">
+                <span class="material-icons-sharp">code</span>
+                <h3>Github</h3>
+            </a>
+            <a href="#" onclick="openContactBox()">
+                <span class="material-icons-sharp">contact_mail</span>
+                <h3>Contact</h3>
+            </a>                
+            <a href="#" id = "logout">
+                <span class="material-icons-sharp">exit_to_app</span>
+                <h3>Đăng xuất</h3>
+            </a>
+        </div>
+
+        <div id ="contactBox" class="wrapper">
+            
+            <div class="top">
+                <span class="close-btn" onclick="closeContactBox()">&times;</span>
+                <i class="fas fa-envelope-open-text"></i>
+
+            </div>
+            <div class="bottom">
+              <div class="info">
+                Your comments are our motivation
+              </div>
+              <form method="post" action="" name="contact-form">
+                <input type="hidden" name="email" id="emailInput">
+                <div class="input-box">
+                  <input type="text" name="nhan_xet" placeholder="Message" required>
+                </div>
+                <div class="input-box">
+                    <input id = "pointInput" type="text" name="diem" placeholder="Point" required>
+                  </div>
+                <div class="input-box">
+                  <input type="submit" value="Sent">
+                </div>
+              </form>
+              
+            </div>
+        </div>
+
+        <div class="note-box">
+            <div class="top-note">
+                <span class="close-btn-note" onclick="closeNoteBox()">&times;</span>
+            </div>
+            <div class="content-note">
+                <h2>My Notes</h2>
+                <textarea id="noteInput" placeholder="Enter your note..." oninput="updateMarquee()" ></textarea>
+            </div>
+        </div>
+
+        <div id="success-message" class="success-message">Đã gửi thành công!</div>
+
+    </div>
+  </header>
+  <div class="video">
+    <video id="video" width="720" height="560" autoplay muted></video>
+  </div>
 </body>
 </html>
