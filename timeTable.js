@@ -1,8 +1,8 @@
 const Sunday = [
     {
         time: 'Sunday',
-        roomNumber: 'Holiday',
-        subject: 'No class Available',
+        roomNumber: 'Ngày nghỉ.',
+        subject: 'Nghỉ ngơi và đi chơi.',
         type: ''
     }
 ]
@@ -60,7 +60,7 @@ const Thursday = [
     {
         time: '01-02 PM',
         roomNumber: '405-E5',
-        subject: 'thực hành THPT hệ thống TTNT',
+        subject: 'Thực hành THPT hệ thống TTNT',
         type: 'thực hành'
     },
     {
@@ -97,7 +97,7 @@ const Saturday = [
     {
         time: '07-10 AM',
         roomNumber: '301-G3',
-        subject: 'cơ sở toán học TTNT',
+        subject: 'Cơ sở toán học TTNT',
         type: 'lý thuyết'
     }
 ]

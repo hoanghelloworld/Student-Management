@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cv.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://unpkg.com/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
 </head>
 <body>
     <header>
@@ -284,16 +284,21 @@
             </div>
         </div>
     </div>
-    <button id="export-btn">Xuất PDF</button>
+    <div class="space">
+        <button></button>
+    </div>
+    <div class="export">
+        <button id="export-btn">Xuất PDF</button>
+    </div>
     <script>
         window.onload = function () {
         const exportBtn = document.getElementById('export-btn');
         const container = document.querySelector('.container');
 
         exportBtn.addEventListener('click', function () {
-            html2canvas(container).then(canvas => {
+            html2canvas(container, {scrollY: -window.scrollY}).then(canvas => {
                 const imgData = canvas.toDataURL('image/png');
-                const pdf = new jsPDF();
+                const pdf = new jspdf.jsPDF();
                 pdf.addImage(imgData, 'PNG', 0, 0);
                 pdf.save('container.pdf');
                 });
