@@ -6,35 +6,46 @@
     padding:50px;
     box-shadow: 0 10px 50px #858585;
     display: grid;
-   grid-template-columns: 35% 60%;
-   column-gap: 5%; 
-   row-gap: 30px;
+    grid-template-columns: 35% 60%;
+    column-gap: 5%; 
+    row-gap: 0px;
 }
 
-.avatar img{
-    width:200px;
-    height:200px;
-    object-fit: cover;
-    border-radius: 50%;
-}
 .avatar{
     position: relative;
     display: inline-block;
     justify-content: flex-end;
     align-items: center;
-    margin-left: 150px;
+    
 }
+
+.avatar img{
+    position: absolute;
+    width:12vw;
+    height:12vw;
+    top:54%;
+    left:75%;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#avatar-image {
+    display: none;
+}
+
 .avatar::after {
     content: '+';
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     z-index: 1;
     color: #000;
     font-size: 50px;
     pointer-events: none;
     opacity: 0.5;
+    margin-left: 9vw;
 }
 .hide-text::after {
     display: none;
@@ -73,6 +84,7 @@
     margin:0;
     font-weight: bold;
     letter-spacing: 3px;
+    color: #000;
 }
 .name .contact{
     padding:0;
@@ -132,23 +144,36 @@ input[type="company"]{
     text-align: right;
     line-height: 30px;
 } 
-h2{
+.info li{
+    color: #000;
+}
+
+/* h2{
     padding:0;
     margin: 0 0 20px 0;
-}
+} */
 .intro{
     padding-left: 30px;
     border-left: 1px solid #000;
     text-align: justify;
 }
+.intro h2{
+    color: #090909;
+}
+
 .experience{
     text-align: right;
 }
+.experience h2 {
+    color: #000;
+}
 .experience h4{
     margin:20px 0 10px;
+    color: #000;
 }
 .skills{
     margin-top:  50px;
+    color: #000;
 }
 .experience ul{
     padding:0;
@@ -163,8 +188,13 @@ list-style: none;
     text-align: justify;
     border-left: 1px solid #000;
 }
+.project h2{
+    color: #000;
+}
+
 .project h4{
     margin:20px 0 10px;
+    color: #000;
 }
 .project .web{
     color: #0c7373;
@@ -173,6 +203,7 @@ list-style: none;
 .project .location{
     font-weight: 500;
     padding-bottom:10px;
+    color: #000;
 }
 .project .item{
     position: relative;
@@ -195,7 +226,8 @@ textarea[type="exp"] {
     background-color: #E9E7EA;
     text-align: right; /* Căn phải nội dung trong textarea */
     font-family: Arial, sans-serif;
-    font-size: 13px; 
+    width:80%;
+    height:80px;
     letter-spacing: 0.5px;
 }
 textarea[type="input-text"] {
@@ -233,5 +265,8 @@ input[type="yearl"]{
 }
 
 .export {
-    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
 }
+
