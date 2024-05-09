@@ -123,10 +123,13 @@
         </div>
 
     </header>
+    <div class="space" style="color: #fff">
+        <button></button>
+    </div>
     <div class="container">
         <div class="avatar">
             <!-- Thay đổi src của ảnh để hiển thị ảnh người dùng đã tải lên -->
-            <img id="avatar-image" src="placeholder.jpg" alt="Avatar">
+            <img id="avatar-image" src="placeholder.jpg" alt="">
             <!-- Thêm phần tải lên ảnh -->
             <input type="file" id="avatar-input" accept="image/*">
         </div>
@@ -173,8 +176,8 @@
             </ul>
         </div>
         <div class="info">
-            <ul>
-                <li contenteditable="true">From <b>City</b> - Country</li>
+            <ul >
+                <li contenteditable="true">From City - Country</li>
                 <li contenteditable="true">01/01/2000</li>
                 <li contenteditable="true">AAAA University</li>
             </ul>
@@ -194,7 +197,7 @@
                 <span><input type="company" placeholder="ABCD company "></span>
              </div>
              <div class="des">
-                <textarea type="exp" rows="4" cols="40" placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium officia nobis quas excepturi consectetur quidem quia est neque doloremque."></textarea>
+                <textarea type="exp" placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium officia nobis quas excepturi consectetur quidem quia est neque doloremque."></textarea>
              </div>
          </div>
  
@@ -205,7 +208,7 @@
                     <span><input type="company" placeholder="ABCD University"></span>
                 </div>
                 <div class="des">
-                    <textarea type = "exp" rows="5" cols="40" placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium officia nobis quas excepturi consectetur quidem quia est neque doloremque."></textarea>
+                    <textarea type = "exp" placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium officia nobis quas excepturi consectetur quidem quia est neque doloremque."></textarea>
                 </div>
             </div>
             <h2 class="skills">
@@ -288,9 +291,11 @@
             </div>
         </div>
     </div>
-    <div class="space">
+    <!-- thẻ đóng lớp container -->
+    </div> 
+    <!-- <div class="space">
         <button></button>
-    </div>
+    </div> -->
     <div class="export">
         <button id="export-btn">Xuất PDF</button>
     </div>
@@ -303,8 +308,8 @@
             html2canvas(container, {scrollY: -window.scrollY}).then(canvas => {
                 const imgData = canvas.toDataURL('image/png');
                 const pdf = new jspdf.jsPDF();
-                pdf.addImage(imgData, 'PNG', 0, 0);
-                pdf.save('container.pdf');
+                pdf.addImage(imgData, 'PNG', 0, 0, pdf.internal.pageSize.getWidth(), pdf.internal.pageSize.getHeight());
+                pdf.save('CV.pdf');
                 });
             });
         };
