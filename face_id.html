@@ -9,25 +9,118 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script defer src="face-api.min.js"></script>
-  <script defer src="script.js"></script>
-  <script src="menu.js"></script>
-  <script src="app.js"></script>
-  <style>
-    .video {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } 
 
-    canvas {
-      position: absolute;
+  <style>
+    canvas{
+        position: absolute;
+        top: 7%;
+        left: 26%;
+        z-index: 1; 
+        pointer-events: none;
+        /* position: absolute; */
     }
+    
+    .video{
+        margin: 0;
+        padding-top: 20px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu_camera {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .menu_camera button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .menu_camera button:hover {
+        background-color: #0056b3;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+        }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .box_anh{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box {
+        flex-basis: 30%;
+    }
+
+    .dropContainer {
+      border: 2px dashed #cccccc;
+      text-align: center;
+      padding: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+      position: relative;
+    }
+
+    .fileInput {
+      display: none;
+    }
+
+    .thumbnail {
+      max-width: 100%;
+      max-height: 100%;
+      display: none;
+    }
+
+    .dropContainer:hover {
+      background: #f2f2f2;
+    }
+
   </style>
+
 </head>
 <body>
   <header>
@@ -137,8 +230,98 @@
 
     </div>
   </header>
+
   <div class="video">
     <video id="video" width="720" height="560" autoplay muted></video>
+    <div class="menu_camera">
+        <button id="attendanceBtn">Điểm danh</button>
+        <button id="registerBtn">Đăng ký</button>
+    </div>
   </div>
+
+  <!-- Thêm một modal ẩn -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Đăng ký</h2>
+      <input type="text" id="name" placeholder="Nhập tên của bạn"><br>
+
+      <div class="box_anh">
+        <div class="box">
+            <div id="dropContainer1" class="dropContainer">
+                <p>Drop a file here or click to select</p>
+                <input class="fileInput" type="file" id="fileInput1" accept=".jpg, .jpeg, .png" />
+                <img class="thumbnail" id="thumbnail1" />
+            </div>
+            <div id="selectedFile1">
+                <h3>Selected File:</h3>
+                <p class="selectedFileName" id="selectedFileName1"></p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div id="dropContainer2" class="dropContainer">
+                <p>Drop a file here or click to select</p>
+                <input class="fileInput" type="file" id="fileInput2" accept=".jpg, .jpeg, .png" />
+                <img class="thumbnail" id="thumbnail2" />
+            </div>
+            <div id="selectedFile2">
+                <h3>Selected File:</h3>
+                <p class="selectedFileName" id="selectedFileName2"></p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div id="dropContainer3" class="dropContainer">
+                <p>Drop a file here or click to select</p>
+                <input class="fileInput" type="file" id="fileInput3" accept=".jpg, .jpeg, .png" />
+                <img class="thumbnail" id="thumbnail3" />
+            </div>
+            <div id="selectedFile3">
+                <h3>Selected File:</h3>
+                <p class="selectedFileName" id="selectedFileName3"></p>
+            </div>
+        </div>
+
+      </div>  
+
+      <button id="submitBtn">Đăng ký</button>
+    </div>
+  </div>
+  
+  <script>
+    // Lấy modal
+    var modal = document.getElementById("myModal");
+
+    // Lấy nút mở modal
+    var btn = document.getElementById("registerBtn");
+
+    // Lấy phần tử <span> đóng modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // Khi người dùng click vào nút, mở modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // Khi người dùng click vào <span> (x), đóng modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Khi người dùng click bất kỳ đâu ngoài modal, đóng modal
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+  </script>   
+
+  <script src="drop_drag.js"></script>
+  <script src="menu.js"></script>
+  <script src="app.js"></script>
+  <script defer async src="face-api.min.js"></script>
+  <script defer async src="script.js"></script>
 </body>
 </html>
