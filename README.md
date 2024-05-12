@@ -7,6 +7,9 @@ Một hệ thống quản lý học tập toàn diện được phát triển b�
 - 22022584 - Nguyễn Huy Hoàng
 - 22022558 - Nguyễn Xuân Trình
 
+[Link Drive](https://drive.google.com/drive/folders/1wRoyhCJG2F8wA7IZIAAFejgI2HtcXcx6?usp=sharing)
+
+
 ## Giới Thiệu
 
 ### Tính Cần Thiết của Đề Tài
