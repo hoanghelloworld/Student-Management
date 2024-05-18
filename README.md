@@ -30,7 +30,7 @@ Các mục tiêu nghiên cứu của dự án quản lý thời khoá biểu th�
 4. **Tìm Hiểu Về Tác Động của Môi Trường và Tình Huống:** Nghiên cứu có thể xem xét tác động của môi trường làm việc, áp lực công việc và các yếu tố khác đến việc quản lý thời gian. Mục tiêu là đề xuất các giải pháp phù hợp cho từng tình
 ## License
 
-See [LICENSE](LICENSE).
+Xem [LICENSE] tại(LICENSE).
 
 ## Contributing
 
