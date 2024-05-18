@@ -28,3 +28,12 @@ Các mục tiêu nghiên cứu của dự án quản lý thời khoá biểu th�
 2. **Tìm Hiểu Về Thói Quen và Ưu Tiên:** Nghiên cứu có thể khám phá cách hình thành thói quen và tác động của chúng đến việc quản lý thời gian. Điều này giúp xác định cách tối ưu hóa thói quen để đạt được mục tiêu.
 3. **Áp Dụng Kỹ Thuật và Công Nghệ:** Dự án có thể tìm hiểu về việc sử dụng ứng dụng, phần mềm hoặc các công cụ kỹ thuật để theo dõi và quản lý thời gian. Mục tiêu là tận dụng công nghệ hiện đại để tối ưu hóa lịch trình.
 4. **Tìm Hiểu Về Tác Động của Môi Trường và Tình Huống:** Nghiên cứu có thể xem xét tác động của môi trường làm việc, áp lực công việc và các yếu tố khác đến việc quản lý thời gian. Mục tiêu là đề xuất các giải pháp phù hợp cho từng tình
+## License
+
+See [LICENSE](LICENSE).
+
+## Contributing
+
+If you want to contribute, just create a PR on the master branch.
+
+Please also see [CONTRIBUTING.md](CONTRIBUTING.md) instructions on how to contribute.
