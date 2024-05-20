@@ -5,16 +5,15 @@
   
   <p>
     A comprehensive learning management system developed using HTML-CSS. It includes features such as course management (add and drop), grade and assessment result management, online quizzes, report generation, student and instructor management, dashboard functionalities, and many other features.
-          Interactive Dashboard 🤩 Attendance Management 🏫Provide Feedback ✍ Result Generation 📜 Review CV📜Leave Application 🍂!
+    Interactive Dashboard 🤩 Attendance Management 🏫 Provide Feedback ✍ Result Generation 📜 Review CV 📜 Leave Application 🍂!
   </p>
-  
   
 <!-- Badges -->
 <p>
   <a href="https://github.com/hoanghelloworld/Student-Management/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/hoanghelloworld/Student-Management" alt="contributors" />
   </a>
-  <a href="">
+  <a href="https://img.shields.io/github/last-commit/hoanghelloworld/Student-Management">
     <img src="https://img.shields.io/github/last-commit/hoanghelloworld/Student-Management" alt="last update" />
   </a>
   <a href="https://github.com/hoanghelloworld/Student-Management/network/members">
@@ -39,7 +38,7 @@
     <a href="https://github.com/hoanghelloworld/Student-Management/issues/">Report Bug</a>
   <span> · </span>
     <a href="https://github.com/hoanghelloworld/Student-Management/issues/">Request Feature</a>
-  </h4>
+</h4>
 </div>
 
 <br />
@@ -68,15 +67,11 @@
 - [Contact](#handshake-contact)
 - [Acknowledgements](#gem-acknowledgements)
 
-  
-
 <!-- About the Project -->
 ## :star2: About the Project
 
-
 <!-- Screenshots -->
 ### :camera: Screenshots
-
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
@@ -128,37 +123,30 @@
 <!-- Features -->
 ### :dart: Features
 
-- Login/Logout
-- Listen to music
-- Like song
-- Upload song
+- Course Management (Add/Drop)
+- Grade and Assessment Result Management
+- Online Quizzes
+- Report Generation
+- Student and Instructor Management
+- Dashboard Functionalities
+- Attendance Management
+- Provide Feedback
+- Result Generation
+- Review CV
+- Leave Application
 
 <!-- Color Reference -->
-### Personas:
-Persona: Duc, the Casual Listener
-Age: 28
-Occupation: Marketing Specialist
-Location: Ha Noi, Viet Nam
-Interests: Fitness, traveling, cooking, pop music
-Tech Savviness: Moderate
+### :art: Color Reference
 
-Background:
-John is a busy marketing specialist working in a fast-paced environment. He uses music primarily as a backdrop to his daily activities, such as commuting, working out, and cooking. He prefers mainstream pop music and enjoys discovering new hits but doesn’t have the time to dig deep into different genres.
+| Color          | Hex                                                                |
+| -------------- | ------------------------------------------------------------------ |
+| Primary Color  | ![#0D6EFD](https://via.placeholder.com/10/0D6EFD?text=+) #0D6EFD   |
+| Secondary Color| ![#6C757D](https://via.placeholder.com/10/6C757D?text=+) #6C757D   |
+| Success Color  | ![#198754](https://via.placeholder.com/10/198754?text=+) #198754   |
+| Danger Color   | ![#DC3545](https://via.placeholder.com/10/DC3545?text=+) #DC3545   |
+| Warning Color  | ![#FFC107](https://via.placeholder.com/10/FFC107?text=+) #FFC107   |
+| Info Color     | ![#0DCAF0](https://via.placeholder.com/10/0DCAF0?text=+) #0DCAF0   |
 
-Goals:
-Find new popular tracks easily.
-Have a seamless music experience while multitasking.
-Discover music that matches his mood or activity.
-Pain Points:
-Limited time to explore and find new music.
-Annoyance with ads interrupting his listening experience.
-Difficulty in finding curated playlists that match his specific activities, like working out or relaxing.
-
-### User Stories:
-1. As a user, I want the app to provide lyrics, artist bios, and other relevant information about the songs I'm listening to.
-2. As a user, I want the app to provide a seamless listening experience across different devices.
-3. As a user, I want the app to curate themed playlists for different occasions or activities.
-4. As a user, I want upload song for everyone to listen to.
 <!-- Env Variables -->
 ### :key: Environment Variables
 
