@@ -269,7 +269,6 @@ function App() {
   <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
 </a>
 <a href="https://github.com/quankaka11">
-  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
 </a>
 
 Contributions are always welcome!
