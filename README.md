@@ -134,7 +134,7 @@
 - Result Generation
 - Review CV
 - Leave Application
-### The Necessity of the Topic
+### :collision: The Necessity of the Topic
 
 The project "Development of a Student Timetable Management Application" has significant meaning and necessity for several reasons:
 
@@ -150,7 +150,7 @@ The project "Development of a Student Timetable Management Application" has sign
 
 In summary, developing a student timetable management application not only improves the management of study time but also brings many benefits for both students and management staff.
 
-### Research Objectives
+### :point_right: Research Objectives
 
 The research objectives of the timetable management project typically revolve around understanding and improving time management skills. Here are some common research objectives in time management studies:
 
