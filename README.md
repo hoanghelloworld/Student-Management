@@ -259,7 +259,7 @@ function App() {
 
 <!-- Contributing -->
 ## :wave: Contributing
-<a href="https://github.com/dxcanh/spotify-premium/graphs/contributors">
+<a href="https://github.com/hoanghelloworld/Student-Managemen/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=hoanghelloworld/Student-Management" />
 =======
 <a href="https://github.com/hoanghelloworld">
