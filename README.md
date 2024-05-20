@@ -55,10 +55,7 @@
 - [Getting Started](#toolbox-getting-started)
   * [Prerequisites](#bangbang-prerequisites)
   * [Installation](#gear-installation)
-  * [Running Tests](#test_tube-running-tests)
-  * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
-- [Usage](#eyes-usage)
+  * [Usage](#eyes-usage)
 - [Roadmap](#compass-roadmap)
 - [Contributing](#wave-contributing)
   * [Code of Conduct](#scroll-code-of-conduct)
@@ -92,11 +89,11 @@ To get a local copy up and running, follow these simple steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your_username/Student-Management-System.git
+    git clone https://github.com/hoanghelloworld/Student-Management.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd Student-Management-System
+    cd Student-Management-main
     ```
 3. Install the dependencies:
     ```bash
