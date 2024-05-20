@@ -261,6 +261,9 @@ function App() {
 ## :wave: Contributing
 <a href="https://github.com/hoanghelloworld/Student-Management/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=hoanghelloworld/Student-Management />
+<a href="https://github.com/hoanghelloworld">
+<a href="https://github.com/trinhdz-dz">
+<a href="https://github.com/quankaka11">
 
 Contributions are always welcome!
 
