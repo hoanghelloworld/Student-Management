@@ -320,21 +320,6 @@ Use this section to mention useful resources and libraries that you have used in
  - [Readme Template](https://github.com/othneildrew/Best-README-Template)
 
 
-
-# Quản Lý Sinh Viên
-
-Một hệ thống quản lý học tập toàn diện được phát triển bằng HTML-CSS. Nó bao gồm các tính năng như quản lý khóa học (thêm và bỏ), quản lý điểm và kết quả đánh giá, trắc nghiệm trực tuyến, tạo báo cáo, quản lý sinh viên và giảng viên, các chức năng bảng điều khiển và nhiều tính năng khác.
-
-## Thành Viên:
-- 22022635 - Nguyễn Tông Quân
-- 22022584 - Nguyễn Huy Hoàng
-- 22022558 - Nguyễn Xuân Trình
-
-[Link Drive](https://drive.google.com/drive/folders/1wRoyhCJG2F8wA7IZIAAFejgI2HtcXcx6?usp=sharing)
-
-
-## Giới Thiệu
-
 ### Tính Cần Thiết của Đề Tài
 Dự án "Phát triển Ứng Dụng Quản Lý Thời Khoá Biểu Sinh Viên" có ý nghĩa và tính cần thiết đáng kể với một số lý do sau:
 1. **Giải Quyết Nhu Cầu Thực Tế:** Sinh viên luôn cần quản lý thời gian một cách hiệu quả để tổ chức lịch học, các hoạt động ngoại khóa và các nhiệm vụ cá nhân. Một ứng dụng quản lý thời khoá biểu sẽ giúp họ dễ dàng theo dõi và tối ưu hóa thời gian của mình.
