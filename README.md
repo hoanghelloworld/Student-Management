@@ -260,13 +260,7 @@ function App() {
 <!-- Contributing -->
 ## :wave: Contributing
 <a href="https://github.com/hoanghelloworld/Student-Management/graphs/contributors">
-=======
-<a href="https://github.com/hoanghelloworld">
-</a>
-<a href="https://github.com/trinhdz-dz">
-</a>
-<a href="https://github.com/quankaka11">
-</a>
+  <img src="https://contrib.rocks/image?repo=hoanghelloworld/Student-Management />
 
 Contributions are always welcome!
 
