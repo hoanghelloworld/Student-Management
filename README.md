@@ -260,15 +260,15 @@ function App() {
 <!-- Contributing -->
 ## :wave: Contributing
 <a href="https://github.com/dxcanh/spotify-premium/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=dxcanh/spotify-premium" />
+  <img src="https://contrib.rocks/image?repo=hoanghelloworld/Student-Management" />
 =======
-<a href="https://github.com/dxcanh">
+<a href="https://github.com/hoanghelloworld">
   <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
 </a>
-<a href="https://github.com/ducle063">
+<a href="https://github.com/trinhdz-dz">
   <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
 </a>
-<a href="https://github.com/TranHungDuc">
+<a href="https://github.com/quankaka11">
   <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
 </a>
 
@@ -280,7 +280,7 @@ See `contributing.md` for ways to get started.
 <!-- Code of Conduct -->
 ### :scroll: Code of Conduct
 
-Please read the [Code of Conduct](https://github.com/dxcanh/spotify-premium/blob/master/CODE_OF_CONDUCT.md)
+Please read the [Code of Conduct](https://github.com/hoanghelloworld/Student-Management/blob/master/CODE_OF_CONDUCT.md)
 
 <!-- FAQ -->
 ## :grey_question: FAQ
@@ -305,7 +305,7 @@ Distributed under the no License. See LICENSE.txt for more information.
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
-Project Link: [https://github.com/dxcanh/spotify-premium](https://github.com/dxcanh/spotify-premium)
+Project Link: [https://github.com/dxcanh/spotify-premium](https://github.com/hoanghelloworld/Student-Management)
 
 
 <!-- Acknowledgments -->
