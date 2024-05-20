@@ -260,7 +260,7 @@ function App() {
 <!-- Contributing -->
 ## :wave: Contributing
 <a href="https://github.com/hoanghelloworld/Student-Management/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=dxcanh/spotify-premium" />
+  <img src="https://contrib.rocks/image?repo=hoanghelloworld/Student-Management" />
 =======
 <a href="https://github.com/hoanghelloworld">
   <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
